@@ -29,7 +29,6 @@ function App() {
 
   return (
     <div className="chat-container">
-      <h1>SkillSync</h1>
       <div className="chat-box">
         {messages.map((message, index) => (
           <p
