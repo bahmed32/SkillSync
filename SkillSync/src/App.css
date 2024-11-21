@@ -1,6 +1,23 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 .chat-box {
     width: 400px;
-    height: 600px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -25,19 +42,6 @@
     background-color: #fff;
   }
   
-  .chat-message {
-    margin-bottom: 15px;
-  }
-  
-  .chat-message strong {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .response {
-    margin-left: 15px;
-    color: #555;
-  }
   
   .chat-footer {
     display: flex;

@@ -30,24 +30,26 @@ function App() {
   return (
     <div className="chat-container">
       <div className="chat-box">
-        {messages.map((message, index) => (
-          <p
-            key={index}
-            className={`message ${message.type}`}
-          >
-            {message.text}
-          </p>
-        ))}
+        <div className="chat-body">
+          {messages.map((message, index) => (
+            <div
+              key={index}
+              className={`chat-message ${message.type === 'user' ? 'user' : 'ai'}`}
+            >
+              <p>{message.text}</p>
+            </div>
+          ))}
+        </div>
+        <form className="chat-footer" onSubmit={handleFormSubmit}>
+          <input
+            type="text"
+            placeholder="Enter your question here..."
+            value={inputText}
+            onChange={handleInputChange}
+          />
+          <button type="submit">Send</button>
+        </form>
       </div>
-      <form onSubmit={handleFormSubmit}>
-        <input
-          type="text"
-          placeholder="Enter Message here"
-          value={inputText}
-          onChange={handleInputChange}
-        />
-        <input type="submit" value="Send" />
-      </form>
     </div>
   );
 }

@@ -1,19 +1,16 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHandHoldingHand } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
 
-
-
-const NavgationBar = () => {
-    return (
-
-        <div className='header'>
-            <div className='icon'>
-            <FontAwesomeIcon icon="fa-solid fa-hand-holding-hand" />
-            </div>
-            <h1> SkillSync</h1>
-        </div>
-
-    );
+const NavigationBar = () => {
+  return (
+    <div className="header">
+      <div className="icon">
+        <FontAwesomeIcon icon={faHandHoldingHand} size="2x" color="#333" />
+      </div>
+      <h1>SkillSync</h1>
+    </div>
+  );
 };
 
-export default NavgationBar;
+export default NavigationBar;
