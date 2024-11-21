@@ -15,6 +15,7 @@ body {
     align-items: center;
     width: 100%;
   }
+ 
 .chat-box {
     width: 400px;
     height: 80vh;
@@ -23,7 +24,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   .chat-header {
@@ -60,7 +61,7 @@ body {
   
   .chat-footer button {
     padding: 8px 15px;
-    background-color: #333;
+    background-color: #ab6445;
     color: #fff;
     border: none;
     border-radius: 4px;

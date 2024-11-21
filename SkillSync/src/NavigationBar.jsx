@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandHoldingHand } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
+import { faHandHoldingHand } from '@fortawesome/free-solid-svg-icons'; 
+import './NavigationBar.css';
 
 const NavigationBar = () => {
   return (

@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -14,13 +16,12 @@ function App() {
 
     if (inputText.trim()) {
 
-      setMessages([...messages, { type: 'user', text: inputText }]);
 
 
       setMessages((prevMessages) => [
         ...prevMessages,
-        { type: 'user', text: inputText },
-        { type: 'ai', text: `You said: "${inputText}"` },
+      
+        { type: 'user', text: `You asked: ${inputText}` },
       ]);
 
       setInputText(''); 
@@ -49,6 +50,8 @@ function App() {
           />
           <button type="submit">Send</button>
         </form>
+        </div>
+        <div>
       </div>
     </div>
   );
